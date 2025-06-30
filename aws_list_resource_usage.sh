@@ -25,6 +25,6 @@ echo "List of Lambda functions:"
 aws lambda list-functions | jq '.Functions[]' 
 
 #AWS IAM Users
-echo "List of IAM Users:" >> resource_report.txt
+echo "List of IAM Users:"
 aws iam list-users | jq '.Users[].UserName'  
 
